@@ -1,0 +1,106 @@
+/* David Rodriguez Chanca UO289521 */
+/*Colores:
+#333333 = Gris oscuro
+#004200 = Verde oscuro
+#004080 = Azul oscuro
+#cccccc = Gris claro
+#ffffff = Blanco 
+#000000 = Negro
+#E5DECD = Dorado */
+/*Especificacion 001 */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+    margin: 2em auto;
+    max-width: 90%;
+    align-items: center;
+}
+/*Especificacion 004 */
+header + p + h2 + section{
+    padding: 1rem;
+    background: #E5DECD;
+    color: #000000; 
+    box-shadow: none;
+    display: block;
+    width: 95vw;
+    justify-content: center;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+/*Especificacion 001 */
+section {
+    padding: 2em;
+    /*color heredado de body*/
+    background: #ffffff;
+    box-shadow: 0em 0.4em 0.6em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    display: flex;
+    width: 80vw; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 1em; 
+}
+/*Especificacion 002 */
+main + section {
+    display: flex;
+    gap: 2em; 
+    margin: 2em auto;
+    max-width: 95%;
+    align-items: center;
+}
+/*Especificacion 002 */
+main section {
+    border: 0.3rem solid #000; 
+
+}
+/*Especificacion 002 */
+article p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0em; 
+    /*background color heredado de body */
+    color: #333333; 
+    text-align: center; 
+ 
+}
+/*Especificacion 002 */
+article h5 {
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    /* background color heredado de article */
+    color: #004200; 
+    text-align: center; 
+}
+/*Especificacion 002 */
+section > h4 {
+    width: 100%; 
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    /*background-color heredado de section */
+    color: #004080;
+    text-align: center;
+}
+
+/*Especificacion 001 */
+form {
+    flex:auto; 
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    gap: 1em;
+    border: 0.1em solid #cccccc;
+    border-radius: 0.5em;
+    /* color heredado de body */
+    background-color: #ffffff;
+}
+
+/*Especificacion 022 */
+form input[type="submit"]:hover {
+    font-size: 1.3rem;
+}
+
+/*Especificacion 002 */
+section + h3{
+    text-align: center;
+}

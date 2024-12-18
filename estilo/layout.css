@@ -1,0 +1,123 @@
+/* David Rodriguez Chanca UO289521 */
+
+/*Especificacion 001 */
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Especificacion 003 */
+header nav a{
+    padding: 2vw 2vw;   
+    border: 1vw 0vw;
+}
+
+/*Especificacion 002 */
+main+div {
+    width: 100%;
+    height: 50vw;
+}
+
+/*Especificacion 001 */
+video{
+    width: 100%;
+    height: auto;
+}
+
+/*Especificacion 002 */
+script+div {
+    width: 100%;
+    height: 50vw;
+}
+/*Especificacion 003 */
+main > article +input {
+    margin: 1% 0%;
+}
+
+/*Especificacion 004 */
+main+div+section>button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Especificacion 003 */
+main+div+section {
+    width: 100%;
+    max-width: 100vh;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: auto; 
+}
+
+/*Especificacion 014 */
+main+div+section>button:active {
+    transform: scale(1.1);
+}
+/*Especificacion 014 */
+main+div+section>button:nth-of-type(2) {
+    top: 50%;
+    left: 2%;
+}
+/*Especificacion 014 */
+main+div+section>button:nth-of-type(1) {
+    top: 50%;
+    right: 2%;
+}
+/*Especificacion 004 */
+div+section+script+ article{
+    margin: auto; 
+}
+/*Especificacion 005 */
+div+section+script+ article > h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;  
+    font-size: 2em;
+}
+/*Especificacion 005 */
+div+section+script+ article > p{
+    text-align:center; 
+    font-size: 1.1em; 
+}
+/*Especificacion 002 */
+section nav {
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw; 
+}
+
+/*Especificacion 004 */
+section + h3 + section img{
+    touch-action: none;
+}
+/*Especificacion 012 */
+section:nth-of-type(2)  p{
+    text-align: center;
+}
+
+
+@media(max-width: 465px) {
+    /*Especificacion 001 */
+    header {
+        /* Redefino el flex-direction para ver el menu en dispositovs moviles de una manera mas accesible   */
+        flex-direction: column;
+        align-items: center; 
+        gap: 0em; 
+    }
+    /*Especificacion 002 */
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+}
