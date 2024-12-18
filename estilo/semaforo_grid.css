@@ -1,0 +1,104 @@
+/* David Rodriguez Chanca UO289521 */
+/*Colores:
+#000A = Negro alpha
+#ff0000 = Rojo puro
+#000000 = Negro puro
+
+*/
+
+@keyframes cambioRojo {
+    0%{
+        /*color heredado de body*/
+        background-color: #000A;
+    }
+    100%{
+        /*color heredado de body*/
+        background-color: #ff0000;
+    }
+}
+
+/*Especificidad 001 */
+div {
+    /*color heredado de body*/
+    background-color: #000A;
+    border: 0.6vw solid #000000;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+/*Especificidad 001 */
+main {
+    width: 90%;
+    height: 60%;
+    margin: auto;   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  auto;
+    gap: 5% 3%;
+    padding-bottom: 5%;
+    align-items: center;
+}
+/*Especificidad 002 */
+main > p{
+    grid-column: 2 / 4;
+    text-align: center;
+}
+/*Especificidad 001 */
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+/*Especificidad 011 */
+button:first-of-type {
+    grid-column: 2 / span 1;
+}
+/*Especificidad 011 */
+button:nth-of-type(2) {
+    grid-column: 3 / span 1;
+}
+/*Especificidad 002 */
+main + section {
+    margin: 5% 15%; 
+}
+/*Especificidad 003 */
+main + section form{
+    text-align: center;
+}
+/*Especificidad 003 */
+main + section > h3{
+    text-align: center; 
+}
+/*Especificidad 001 */
+ol{
+    margin: 5% 15%
+}
+/*Especificidad 022(todas) */
+main.load div:first-of-type,
+main.load div:nth-of-type(2),
+main.load div:nth-of-type(3),
+main.load div:nth-of-type(4) {
+    animation-name: cambioRojo;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+/*Especificidad 022 */
+main.load div:nth-of-type(2){
+    animation-delay: 0.5s;
+}
+/*Especificidad 022 */
+main.load div:nth-of-type(3){
+    animation-delay: 1s;
+}
+/*Especificidad 022 */
+main.load div:nth-of-type(4){
+    animation-delay: 1.5s;
+}
+
+/*Especificidad 022(todas) */
+main.unload div:first-of-type,
+main.unload div:nth-of-type(2),
+main.unload div:nth-of-type(3),
+main.unload div:nth-of-type(4) {
+     animation-name:out ;
+     animation-duration:0.1s;
+     animation-fill-mode: forwards;
+}

@@ -1,0 +1,65 @@
+
+/* David Rodriguez Chanca UO289521 */
+/*Colores:
+#fff = Blanco puro
+#fffa = Blanco alpha
+#595959 = Gris
+
+*/
+/*Especificidad 001 */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    text-align: center;
+    align-items: center;
+}
+
+/*Especificidad 002 */
+article > img {
+    width: 10%;
+    height: auto;
+}
+/*Especificidad 002 */
+article > h3 {
+    text-align: center;
+    font-size: 2em;
+    /* color heredado de body*/
+    background-color: #fff;
+    padding: 1%;
+    margin: 1%;
+}
+/*Especificidad 002 */
+article > p{
+    /*background color heredado de article*/
+    color: #fff; 
+    padding-bottom: 1%;
+}
+/*Especificidad 001 */
+section{
+    text-align: center;
+}
+/*Especificidad 002 */
+section > ul{
+    list-style-type:square; 
+    list-style-position: inside;
+}
+
+/*Especificidad 001 */
+h2 {
+    text-align: center;
+    
+}
+/*Especificidad 001 */
+article {
+    width: 80%;
+    margin-bottom: 2vw;
+    /* color heredado de body*/
+    background-color: #404040;
+    border-radius: 1%;
+    box-shadow: 1em 1em 1em rgba(0,0,0,.3);
+}
+/*Especificidad 011 */
+img:hover {
+    width: 15%;
+}

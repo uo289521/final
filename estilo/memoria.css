@@ -6,7 +6,7 @@
 */
 
 
-/*Especificacion 002 */
+/*Especificidad 002 */
 article img {
     margin: 0; 
     width: 70%;
@@ -18,7 +18,7 @@ article img {
     backface-visibility: hidden;
     font-size: 1rem; 
 }
-/*Especificacion 002 */
+/*Especificidad 002 */
 article h3 {
     flex-direction: row;
     align-items: center;
@@ -29,11 +29,11 @@ article h3 {
     backface-visibility: hidden;
     font-size: calc(1vw + 0.5em); 
 }
-/*Especificacion 002 */
+/*Especificidad 002 */
 article img {
     transform: rotateY(180deg);
 }
-/*Especificacion 011 */
+/*Especificidad 011 */
 article[data-state=flip]
 {
     transform: rotateY(180deg);
@@ -41,24 +41,24 @@ article[data-state=flip]
     background-color: #fff;
     
 }
-/*Especificacion 012*/
+/*Especificidad 012*/
 article[data-state=flip]  img {
         /* color heredado de body*/
     background-color: #fff;
     
 }
-/*Especificacion 011 */
+/*Especificidad 011 */
 article[data-state=revealed]{
     transform: rotateY(180deg);
         /* color heredado de body*/
     background-color: #fff;
 }
-/*Especificacion 012 */
+/*Especificidad 012 */
 article[data-state=revealed] img {
         /* color heredado de body*/
     background-color: #fff;
 }
-/*Especificacion 001 */
+/*Especificidad 001 */
 article {
     width: 19%;
     height: 15em;
@@ -76,12 +76,12 @@ article {
     border-radius: 5%;
     position: relative;
 }
-/*Especificacion 001 */
+/*Especificidad 001 */
 h2{
     width: 100%;
     text-align: center;
 }
-/*Especificacion 001 */
+/*Especificidad 001 */
 main{
     display: flex;
     flex-wrap: wrap;
@@ -93,12 +93,12 @@ main{
 
 
 @media(max-width:465px){
-    /*Especificacion 001 */
+    /*Especificidad 001 */
     article{
         /*Redifinicion de widht para asegurar que estuviesen en 3 filas las tarjetas */
         width: 18%;
     }
-    /*Especificacion 002 */
+    /*Especificidad 002 */
     article img{
         /*Redifinicion de height para ajustar imagenes en movil */
       height: 90%;

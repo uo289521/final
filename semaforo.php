@@ -106,7 +106,7 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
     <link rel="stylesheet" type="text/css" href="estilo/layout.css"/>
-    <link rel="stylesheet" type="text/css" href="estilo/semaforo.css"/>
+    <link rel="stylesheet" type="text/css" href="estilo/semaforo_grid.css"/>
     <link rel="icon" href="multimedia/imagenes/favicon.ico" sizes="48x48" type = "image/vnd.microsoft.icon"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>

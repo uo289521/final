@@ -48,29 +48,22 @@
         {
             $this->monedaLocal = $siglasLocal;
             $this->monedaCambio = $siglasCambio;
-            $this->apiKey = "d5d059a3b1991f73a916d512b0cda62b";
+            $this->apiKey = "a68783c22c7c2b4a8a80f78f";
         }
 
         function getTipoCambio()
         {
-            $url = 'https://apilayer.net/api/live?';
-            $url .= 'access_key=' . $this->apiKey;
-            $url .= '&currencies=' . $this->monedaCambio;
-            $url .= '&source=' . $this->monedaLocal;
-            $url .= '&format=1';
+            $url = 'https://v6.exchangerate-api.com/v6/';
+            $url .=  $this->apiKey;
+            $url .= "/pair" . "/" .$this->monedaLocal;
+            $url .= '/' . $this->monedaCambio;
 
             $respuesta = file_get_contents($url);
-            $json = json_decode($respuesta);
-
-            if ($json == null) {
-                echo "<p> Fallo en la llamada para el cambio de la moneda </p>";
-            }else{
-                $variable = $this->monedaLocal . $this->monedaCambio; 
-                $cambio = $json->quotes->$variable; 
-                echo "<p> El tipo de cambio actual es de 1 euro por ". $cambio . " dolares estadounidenses</p>"; 
-                
+            $json = json_decode($respuesta, true);
+            $cambio = $json["conversion_rate"]; 
+             echo "<p> El tipo de cambio actual es de 1 euro por ". $cambio . " dolares estadounidenses</p>";      
             }
-        }
+        
     }
 
     ?>

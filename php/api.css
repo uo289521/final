@@ -7,7 +7,7 @@
 #ffffff = Blanco 
 #000000 = Negro
 #E5DECD = Dorado */
-/*Especificacion 001 */
+/*Especificidad 001 */
 main {
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ main {
     max-width: 90%;
     align-items: center;
 }
-/*Especificacion 004 */
+/*Especificidad 004 */
 header + p + h2 + section{
     padding: 1rem;
     background: #E5DECD;
@@ -29,7 +29,7 @@ header + p + h2 + section{
     align-items: center;
 }
 
-/*Especificacion 001 */
+/*Especificidad 001 */
 section {
     padding: 2em;
     /*color heredado de body*/
@@ -42,7 +42,7 @@ section {
     flex-wrap: wrap; 
     gap: 1em; 
 }
-/*Especificacion 002 */
+/*Especificidad 002 */
 main + section {
     display: flex;
     gap: 2em; 
@@ -50,12 +50,12 @@ main + section {
     max-width: 95%;
     align-items: center;
 }
-/*Especificacion 002 */
+/*Especificidad 002 */
 main section {
     border: 0.3rem solid #000; 
 
 }
-/*Especificacion 002 */
+/*Especificidad 002 */
 article p {
     font-size: 1.2rem;
     margin: 0.5rem 0em; 
@@ -64,7 +64,7 @@ article p {
     text-align: center; 
  
 }
-/*Especificacion 002 */
+/*Especificidad 002 */
 article h5 {
     font-size: 2rem; 
     margin-bottom: 1rem; 
@@ -72,7 +72,7 @@ article h5 {
     color: #004200; 
     text-align: center; 
 }
-/*Especificacion 002 */
+/*Especificidad 002 */
 section > h4 {
     width: 100%; 
     margin-bottom: 1em;
@@ -82,7 +82,7 @@ section > h4 {
     text-align: center;
 }
 
-/*Especificacion 001 */
+/*Especificidad 001 */
 form {
     flex:auto; 
     display: flex;
@@ -95,12 +95,12 @@ form {
     background-color: #ffffff;
 }
 
-/*Especificacion 022 */
+/*Especificidad 022 */
 form input[type="submit"]:hover {
     font-size: 1.3rem;
 }
 
-/*Especificacion 002 */
+/*Especificidad 002 */
 section + h3{
     text-align: center;
 }
