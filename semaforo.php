@@ -29,7 +29,6 @@
 
                     $resultado = $db->query("SHOW TABLES LIKE 'registro'");
                     if ($resultado->num_rows === 0) {
-                        // Crear la tabla 'registro'
                         $sql = "CREATE TABLE registro (
                                     id INT AUTO_INCREMENT PRIMARY KEY,
                                     nombre VARCHAR(50) NOT NULL,

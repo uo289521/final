@@ -357,7 +357,6 @@
 
             fputcsv($fp, $columnas);
 
-            // Escribir filas
             while ($fila = $result->fetch_assoc()) {
                 $datos = [];
                 foreach ($columnas as $columna) {

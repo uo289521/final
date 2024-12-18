@@ -4,8 +4,6 @@ class Noticias{
         var message = document.createElement('p');
         if (window.File && window.FileReader && window.FileList && window.Blob) 
         {  
-            //El navegador soporta el API File
-
             message.textContent = "Este navegador soporta el API File.";
         }
             else{
